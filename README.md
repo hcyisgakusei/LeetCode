@@ -2,5 +2,4 @@
 
 | #   | Title                                                                                                                             | javascript                | Difficulty |
 | --- | --------------------------------------------------------------------------------------------------------------------------------- | ------------------------- | ---------- |
-|     |                                                                                             | 1   | [two sum](https://leetcode.com/problems/two-sum/)                                                                                 | [link](/src/1/index.js)   | easy       |
-                                      |                           |            |          
+| 1   | [two sum](https://leetcode.com/problems/two-sum/)                                                                                 | [link](/src/1/index.js)   | easy       |
