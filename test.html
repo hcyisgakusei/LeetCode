@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+const longestPalindrome = function (s) {
+    let palindromic = '', cur = '', j;
+    for (let i = 0; i < s.length; i++) {
+        j = 1;
+        cur = s[i];
+        if (s[i - j] && s[i + j] && s[i - j] === s[i + j]) {
+            while (s[i - j] && s[i + j] && s[i - j] === s[i + j]) {
+                cur = s[i - j] + cur + s[i + j];
+                j = j + 1;
+            }
+        }
+        cur.length > palindromic.length ? palindromic = cur : '';
+        j = 0;
+        if (s[i - j] && s[i + j + 1] && s[i - j] === s[i + j + 1]) {
+            cur = '';
+            while (s[i - j] && s[i + j + 1] && s[i - j] === s[i + j + 1]) {
+                cur = s[i - j] + cur + s[i + j + 1];
+                j = j + 1;
+            }
+        }
+        cur.length > palindromic.length ? palindromic = cur : '';
+    }
+    return palindromic;
+};
+console.log(longestPalindrome(''));
+// console.log(longestPalindrome('cbbd'));
+// console.log(longestPalindrome('cbbbbd'));
+// console.log(longestPalindrome('c'));
+
+</script>
+</body>
+</html>
