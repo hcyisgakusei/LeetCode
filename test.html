@@ -6,34 +6,42 @@
 </head>
 <body>
 <script>
-const longestPalindrome = function (s) {
-    let palindromic = '', cur = '', j;
-    for (let i = 0; i < s.length; i++) {
-        j = 1;
-        cur = s[i];
-        if (s[i - j] && s[i + j] && s[i - j] === s[i + j]) {
-            while (s[i - j] && s[i + j] && s[i - j] === s[i + j]) {
-                cur = s[i - j] + cur + s[i + j];
-                j = j + 1;
-            }
-        }
-        cur.length > palindromic.length ? palindromic = cur : '';
-        j = 0;
-        if (s[i - j] && s[i + j + 1] && s[i - j] === s[i + j + 1]) {
-            cur = '';
-            while (s[i - j] && s[i + j + 1] && s[i - j] === s[i + j + 1]) {
-                cur = s[i - j] + cur + s[i + j + 1];
-                j = j + 1;
-            }
-        }
-        cur.length > palindromic.length ? palindromic = cur : '';
+const convert = function (s, numRows) {
+    if (numRows === 1) {
+        return s;
     }
-    return palindromic;
+    const resultArr = Array.from({length: numRows}, () => '');
+    const range = numRows * 2 - 2;
+    for (let i = 0; i < s.length; i++) {
+        if (i % range < numRows) {
+            resultArr[i % range] = resultArr[i % range] + s[i];
+        } else {
+            resultArr[range - i % range] = resultArr[range - i % range] + s[i];
+        }
+    }
+    return resultArr.reduce((acc, cur) => {
+        return acc += cur;
+    }, '');
 };
-console.log(longestPalindrome(''));
-// console.log(longestPalindrome('cbbd'));
-// console.log(longestPalindrome('cbbbbd'));
-// console.log(longestPalindrome('c'));
+// P   A   H   N
+// A P L S I I G
+// Y   I   R
+
+
+
+
+// P     I    N
+// A   L S  I G
+// Y A   H R
+// P     I
+
+
+console.log(convert("", 7));
+console.log(convert("PAYPALISHIRING", 1));
+console.log(convert("PAYPALISHIRING", 2));
+console.log(convert("PAYPALISHIRING", 3));
+console.log(convert("PAYPALISHIRING", 4));
+console.log(convert("PAYPALISHIRING", 5));
 
 </script>
 </body>
