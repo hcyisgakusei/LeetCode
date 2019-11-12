@@ -24,26 +24,26 @@ Explanation: 342 + 465 = 807.
  * @return {ListNode}
  */
 const addTwoNumbers = function (l1, l2) {
-    let sumNumbers = new ListNode(0);
-    let cur = sumNumbers;
+    let subNumbers = new ListNode(0);
+    let cur = subNumbers;
     let flag = false;
     while (l1 || l2) {
-        let l1Num = +(l1 || {}).val || 0;
-        let l2Num = +(l2 || {}).val || 0;
-        let sum = l1Num + l2Num;
+        let sum = ((l1 &&l1.val) || 0) + ((l2 &&l2.val) || 0);
         if (flag) {
-            sum += 1;
-            flag = false;
+            sum +=1;
         }
-        flag = sum >= 10;
+        flag = (sum > 9);
         cur.next = new ListNode(sum % 10);
         cur = cur.next;
-        l1 = l1 ? l1.next : null;
-        l2 = l2 ? l2.next : null;
+        l1 = (l1 && l1.next) || null;
+        l2 = (l2 && l2.next) || null;
     }
-    flag ? cur.next = new ListNode(1) : '';
-    return sumNumbers.next;
+    if(flag){
+        cur.next = new ListNode(1);
+    }
+    return subNumbers.next;
 };
+
 
 
 

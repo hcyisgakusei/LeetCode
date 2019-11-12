@@ -1,5 +1,5 @@
 /*
-7. Reverse Integer
+8. String to Integer (atoi)
 Question:
 Implement atoi which converts a string to an integer.
 
