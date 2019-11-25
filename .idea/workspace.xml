@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc94392a-5a51-45d8-ae61-75cf85247ac4" name="Default" comment="Merge branch 'master' of https://github.com/hcyisgakusei/LeetCode&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
-      <change afterPath="$PROJECT_DIR$/src/10/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/101/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/11/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/12/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/125/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/13/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/14/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/15/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/17/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/20/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/21/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/212/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/242/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/26/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/79/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/9/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/2/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/2/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/8/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/8/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/101/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/101/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,11 +15,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/26/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+            <state relative-caret-position="422">
+              <caret line="49" column="12" lean-forward="true" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/101/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="615">
+              <caret line="52" column="46" selection-start-line="52" selection-start-column="46" selection-end-line="52" selection-end-column="46" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -71,8 +65,8 @@
         <option value="$PROJECT_DIR$/src/79/index.js" />
         <option value="$PROJECT_DIR$/src/212/index.js" />
         <option value="$PROJECT_DIR$/src/2/index.js" />
-        <option value="$PROJECT_DIR$/src/101/index.js" />
         <option value="$PROJECT_DIR$/src/26/index.js" />
+        <option value="$PROJECT_DIR$/src/101/index.js" />
       </list>
     </option>
   </component>
@@ -115,6 +109,12 @@
               <item name="LeetCode" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="26" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeetCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeetCode" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="101" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -190,12 +190,12 @@
       <workItem from="1554174754664" duration="4107000" />
       <workItem from="1554187925746" duration="258000" />
       <workItem from="1554188231577" duration="2952000" />
-      <workItem from="1571273926304" duration="19759000" />
+      <workItem from="1571273926304" duration="20065000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46216000" />
+    <option name="totallyTimeSpent" value="46522000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -221,7 +221,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49928468" weight="0.32969698" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.5325301" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.5325301" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49928468" weight="0.32969698" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007153" side_tool="true" weight="0.32969698" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -364,20 +364,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/101/index.js">
+    <entry file="file://$PROJECT_DIR$/src/26/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="53" column="31" lean-forward="true" selection-start-line="42" selection-start-column="4" selection-end-line="53" selection-end-column="31" />
+        <state relative-caret-position="422">
+          <caret line="49" column="12" lean-forward="true" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/26/index.js">
+    <entry file="file://$PROJECT_DIR$/src/101/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+        <state relative-caret-position="615">
+          <caret line="52" column="46" selection-start-line="52" selection-start-column="46" selection-end-line="52" selection-end-column="46" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>

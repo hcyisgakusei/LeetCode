@@ -40,17 +40,11 @@ Bonus points if you could solve it both recursively and iteratively.
 
 
 const isSymmetric = function (root) {
-    const isMirror = (tree1, tree2) => {
-        if (!tree1 && !tree2) return true;
-        if (!tree1 || !tree2) return false;
-        if (tree1.val === tree2.val) {
-           return isMirror(tree1.left, tree2.right) && isMirror(tree1.right, tree2.left);
-        }else{
-            return false;
-        }
-
+   const isSame = (tree1,tree2) => {
+       if(!tree1 && !tree2) return true;
+       if(!tree1 || !tree2 ) return false;
+       if(tree1.val !== tree2.val) return false;
+       return isSame(tree1.left,tree2.right) && isSame(tree1.right,tree2.left);
     };
-
-    return isMirror(root,root);
-
+    return isSame(root,root);
 };
