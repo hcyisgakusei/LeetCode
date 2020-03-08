@@ -23,14 +23,14 @@ Explanation: 342 + 465 = 807.
  * @param {ListNode} l2
  * @return {ListNode}
  */
-const addTwoNumbers = function (l1, l2) {
+const addTwoNumbers1 = function (l1, l2) {
     let subNumbers = new ListNode(0);
     let cur = subNumbers;
     let flag = false;
     while (l1 || l2) {
-        let sum = ((l1 &&l1.val) || 0) + ((l2 &&l2.val) || 0);
+        let sum = ((l1 && l1.val) || 0) + ((l2 && l2.val) || 0);
         if (flag) {
-            sum +=1;
+            sum += 1;
         }
         flag = (sum > 9);
         cur.next = new ListNode(sum % 10);
@@ -38,12 +38,38 @@ const addTwoNumbers = function (l1, l2) {
         l1 = (l1 && l1.next) || null;
         l2 = (l2 && l2.next) || null;
     }
-    if(flag){
+    if (flag) {
         cur.next = new ListNode(1);
     }
     return subNumbers.next;
 };
 
+const addTwoNumbers = function (l1, l2) {
+    const sumNode = new ListNode(0);
+   let  currentNode = sumNode;
+    let flag = false;
+    while (l1 || l2) {
+        let sum = ((l1 &&l1.val) || 0) + ((l2 &&l2.val) || 0);
+        if (flag) {
+            sum += 1;
+            flag = false;
+        }
+        if (sum > 9) {
+            sum = sum - 10;
+            flag = true;
+        }
+        currentNode.next = new ListNode(sum);
+        l1 = l1 && l1.next;
+        l2 = l2&&l2.next;
+        currentNode = currentNode.next;
+        console.log(sumNode);
+    }
+    if (flag) {
+        currentNode.next = new ListNode(1);
+    }
+    return sumNode.next;
+
+};
 
 
 

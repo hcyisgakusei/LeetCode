@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="fc94392a-5a51-45d8-ae61-75cf85247ac4" name="Default" comment="">
       <change afterPath="$PROJECT_DIR$/src/136/index.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/16/index.js" afterDir="false" />
@@ -15,6 +16,10 @@
       <change beforePath="$PROJECT_DIR$/src/21/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/21/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/8/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/8/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/9/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/9/index.js" afterDir="false" />
+=======
+    <list default="true" id="fc94392a-5a51-45d8-ae61-75cf85247ac4" name="Default" comment="Merge branch 'master' of https://github.com/hcyisgakusei/LeetCode&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <change beforePath="$PROJECT_DIR$/src/101/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/101/index.js" afterDir="false" />
+>>>>>>> 76219b69c22103763a8d278916e170911bd0108a
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,7 +32,36 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+=======
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/26/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="422">
+              <caret line="49" column="12" lean-forward="true" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/101/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="615">
+              <caret line="52" column="46" selection-start-line="52" selection-start-column="46" selection-end-line="52" selection-end-column="46" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+>>>>>>> 76219b69c22103763a8d278916e170911bd0108a
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -75,6 +109,7 @@
         <option value="$PROJECT_DIR$/src/125/index.js" />
         <option value="$PROJECT_DIR$/src/242/index.js" />
         <option value="$PROJECT_DIR$/src/79/index.js" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/21/index.js" />
         <option value="$PROJECT_DIR$/src/16/index.js" />
         <option value="$PROJECT_DIR$/src/88/index.js" />
@@ -87,6 +122,12 @@
         <option value="$PROJECT_DIR$/src/994/index.js" />
         <option value="$PROJECT_DIR$/src/70/index.js" />
         <option value="$PROJECT_DIR$/src/136/index.js" />
+=======
+        <option value="$PROJECT_DIR$/src/212/index.js" />
+        <option value="$PROJECT_DIR$/src/2/index.js" />
+        <option value="$PROJECT_DIR$/src/26/index.js" />
+        <option value="$PROJECT_DIR$/src/101/index.js" />
+>>>>>>> 76219b69c22103763a8d278916e170911bd0108a
       </list>
     </option>
   </component>
@@ -137,6 +178,12 @@
               <item name="LeetCode" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="242" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeetCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeetCode" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="101" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -200,6 +247,7 @@
       <workItem from="1554097059864" duration="5910000" />
       <workItem from="1554174754664" duration="4107000" />
       <workItem from="1554187925746" duration="258000" />
+<<<<<<< HEAD
       <workItem from="1554188231577" duration="4532000" />
       <workItem from="1554606115824" duration="10716000" />
       <workItem from="1558599785321" duration="753000" />
@@ -217,11 +265,19 @@
       <workItem from="1583220419428" duration="2959000" />
       <workItem from="1583335935105" duration="2794000" />
       <workItem from="1583550538672" duration="5299000" />
+=======
+      <workItem from="1554188231577" duration="2952000" />
+      <workItem from="1571273926304" duration="20065000" />
+>>>>>>> 76219b69c22103763a8d278916e170911bd0108a
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="99036000" />
+=======
+    <option name="totallyTimeSpent" value="46522000" />
+>>>>>>> 76219b69c22103763a8d278916e170911bd0108a
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -248,6 +304,14 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39925835" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+<<<<<<< HEAD
+=======
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49928468" weight="0.32969698" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.5325301" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49928468" weight="0.32969698" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007153" side_tool="true" weight="0.32969698" />
+>>>>>>> 76219b69c22103763a8d278916e170911bd0108a
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -592,16 +656,24 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/125/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="14" selection-end-column="3" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/26/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="49" column="12" lean-forward="true" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
+>>>>>>> 76219b69c22103763a8d278916e170911bd0108a
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/70/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -613,6 +685,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="332">
           <caret line="21" selection-start-line="21" selection-end-line="23" selection-end-column="2" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/101/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="52" column="46" selection-start-line="52" selection-start-column="46" selection-end-line="52" selection-end-column="46" />
+>>>>>>> 76219b69c22103763a8d278916e170911bd0108a
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
