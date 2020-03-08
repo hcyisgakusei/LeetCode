@@ -47,30 +47,64 @@ Explanation: The number "-91283472332" is out of the range of a 32-bit signed in
  */
 
 const myAtoi = function (str) {
-    let result = 0;
-    let firstFlag = true;
-    let symbol;
+    str = str.trim();
+    let symbol, result = 0;
     const reg = /\d/;
     const max = Math.pow(2, 31);
     for (let i = 0; i < str.length; i++) {
-        if (!(str[i] === ' ' && firstFlag && !symbol)) {
-            if (firstFlag && !symbol && (str[i] === '+' || str[i] === '-')) {
-                firstFlag = false;
+        if ((str[i] === '-' || str[i] === '+') && i === 0) {
+            if (!symbol) {
                 symbol = str[i];
             } else {
-                if (!reg.test(str[i])) {
-                    return symbol === '-' ? 0 - result : result;
-                } else {
-                    if (symbol === '-' && ((max - str[i]) / 10 <= +result) || symbol !== '-' && ((max - str[i] - 1) / 10 <= +result)) {
-                        return symbol === '-' ? 0 - max : max - 1;
-                    }
-                    firstFlag = false;
-                    result = result * 10 + (+str[i]);
-                }
+                return result;
             }
+        } else {
+            if (!reg.test(str[i])) {
+                return symbol === '-' ? 0 - result : result;
+            }
+            if (symbol === '-' && ((max - str[i]) / 10 <= +result)) {
+                return 0 - max;
+            }
+            if (symbol !== '-' && ((max - str[i] - 1) / 10 <= +result)) {
+                return max - 1;
+            }
+            result = result * 10 + (+str[i]);
         }
     }
     return symbol === '-' ? 0 - result : result;
+
+
+    // let result = 0;
+    // let firstFlag = true;
+    // let symbol;
+    // const reg = /\d/;
+    // const max = Math.pow(2, 31);
+    // for (let i = 0; i < str.length; i++) {
+    //     if (!(str[i] === ' ' && firstFlag && !symbol)) { //
+    //         if (firstFlag && !symbol && (str[i] === '+' || str[i] === '-')) {
+    //             firstFlag = false;
+    //             symbol = str[i];
+    //         } else {
+    //             if (!reg.test(str[i])) {
+    //                 return symbol === '-' ? 0 - result : result;
+    //             } else {
+    //                 if (symbol === '-' && ((max - str[i]) / 10 <= +result) || symbol !== '-' && ((max - str[i] - 1) / 10 <= +result)) {
+    //                     return symbol === '-' ? 0 - max : max - 1;
+    //                 }
+    //                 firstFlag = false;
+    //                 result = result * 10 + (+str[i]);
+    //             }
+    //         }
+    //     }
+    // }
+    // return symbol === '-' ? 0 - result : result;
 };
+console.log(myAtoi("   -42   "));
+console.log(myAtoi("4193 with words"));
+console.log(myAtoi("words and 987"));
+console.log(myAtoi("-91283472332"));
+console.log(myAtoi("+1"));
+console.log(myAtoi("0-1"));
+console.log(myAtoi("    +11191657170"));
 
 

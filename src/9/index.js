@@ -22,7 +22,7 @@ Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
  * @return {boolean}
  */
 const isPalindrome = function (x) {
-    const original =x;
+    const original = x;
     if (x < 0) {
         return false;
     }
@@ -34,6 +34,5 @@ const isPalindrome = function (x) {
     }
     return result === original;
 };
-
 
 
