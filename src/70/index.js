@@ -26,13 +26,22 @@ Explanation: There are three ways to climb to the top.
  * @return {number}
  */
 const climbStairs = function (n) {
-    const stairs = [];
-    stairs[1] = 1;
-    stairs[2] = 2;
+    let first = 1, second = 2;
+    if (n === 1) return first;
+    if (n === 2) return second;
     for (let i = 3; i <= n; i++) {
-        stairs[i] = stairs[i - 1] + stairs[i - 2];
+        const thisTime = first + second;
+        first = second;
+        second = thisTime;
     }
-    return stairs[n];
+    return second;
+    // const stairs = [];
+    // stairs[1] = 1;
+    // stairs[2] = 2;
+    // for (let i = 3; i <= n; i++) {
+    //     stairs[i] = stairs[i - 1] + stairs[i - 2];
+    // }
+    // return stairs[n];
 };
 console.log(climbStairs(1));
 console.log(climbStairs(2));

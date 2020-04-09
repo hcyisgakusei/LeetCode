@@ -1,0 +1,27 @@
+<html>
+ <ul id="test">
+     <li data-key="1"> 1 </li>
+     <li data-key="2"> 2 </li>
+     <li data-key="3"> 3 </li>
+ </ul>
+</html>
+<script>
+
+document.getElementById("test").onclick = function test(e) {
+       console.log(e.target.getAttribute('data-key'));
+  }
+var a = {
+    name : "aName",
+    func1: function () {
+        console.log(this.name); // 'aName'
+    },
+    func2: function () {
+        (function(str1,str2) {
+            console.log(str1,str2)
+           this.func1();
+       }).call(a,1,2);
+    }
+};
+a.func2();
+
+</script>

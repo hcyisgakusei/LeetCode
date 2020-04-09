@@ -24,11 +24,12 @@ Output: false
  * @return {boolean}
  */
 const isPowerOfTwo = function (n) {
-    let result, times = 0;
-    while (!result || n > result) {
-        result = Math.pow(2, times++);
-    }
-    return n === result;
+    return n > 0 && (n & (n-1)) === 0;
+    // let result, times = 0;
+    // while (!result || n > result) {
+    //     result = Math.pow(2, times++);
+    // }
+    // return n === result;
 };
 
 console.log(isPowerOfTwo(0));
