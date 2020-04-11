@@ -20,6 +20,7 @@ Although the above answer is in lexicographical order, your answer could be in a
 const letterCombinations = function (digits) {
     const twoArrCombinations = (arr1, arr2) => {
         const result = [];
+        console.log(typeof  arr2)
         arr1.forEach((arr1Item) => {
             arr2.forEach((arr2Item) => {
                 result.push(`${arr1Item}${arr2Item}`);
@@ -47,6 +48,6 @@ const letterCombinations = function (digits) {
     }
     return digitsArr[0] || [];
 };
-// console.log(letterCombinations(''));
-// console.log(letterCombinations('2'));
-// console.log(letterCombinations('234'));
+console.log(letterCombinations('2'));
+console.log(letterCombinations('2'));
+console.log(letterCombinations('234'));
