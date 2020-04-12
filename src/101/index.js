@@ -40,11 +40,18 @@ Bonus points if you could solve it both recursively and iteratively.
 
 
 const isSymmetric = function (root) {
-   const isSame = (tree1,tree2) => {
-       if(!tree1 && !tree2) return true;
-       if(!tree1 || !tree2 ) return false;
-       if(tree1.val !== tree2.val) return false;
-       return isSame(tree1.left,tree2.right) && isSame(tree1.right,tree2.left);
-    };
-    return isSame(root,root);
+    // const isSymmetricNode = (node1, node2) => {
+    //     if (!node1 && !node2) return true;
+    //     if (!node1 || !node2) return false;
+    //     if (node1.val !== node2.val) return false;
+    //     return isSymmetricNode(node1.left, node2.right) && isSymmetricNode(node1.right, node2.left);
+    // };
+    // return !root || isSymmetricNode(root.left, root.right);
+    const isSame = (tree1,tree2) => {
+        if(!tree1 && !tree2) return true;
+        if(!tree1 || !tree2 ) return false;
+        if(tree1.val !== tree2.val) return false;
+        return isSame(tree1.left,tree2.right) && isSame(tree1.right,tree2.left);
+     };
+     return isSame(root,root);
 };
