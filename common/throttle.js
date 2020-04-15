@@ -15,10 +15,10 @@
  */
 function throttle(func, wait) {
     let lastTime = null;
-    return (...arg) => {
+    return () => {
         const now = new Date();
         if (!lastTime || now - lastTime > wait) {
-            func(...arg);
+            func(arguments);
             lastTime = now;
         }
 

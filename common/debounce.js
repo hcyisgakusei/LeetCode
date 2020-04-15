@@ -17,13 +17,13 @@
  */
 function debounce(func, wait) {
     let timer = null;
-    return (...arg) => {
+    return () => {
         if (timer) {
             clearTimeout(timer);
             timer = null;
         }
         timer = setTimeout(() => {
-            func(...arg);
+            func(...arguments);
         }, wait);
     }
 }
