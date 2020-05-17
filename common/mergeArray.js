@@ -1,26 +1,19 @@
 function merge(arr1, arr2) {
-
-    const result = [];
-    while (arr1.length || arr2.length) {
-        if (!arr1.length) {
-            result.push(arr2.shift());
-            continue;
-        }
-        if (!arr2.length) {
+    let result = [];
+    while (arr1.length && arr2.length) {
+        if (arr1[0] <= arr2[0]) {
             result.push(arr1.shift());
-            continue;
-        }
-        if (arr1[0] < arr2[0]) {
-            arr1[0] === result[result.length - 1] ? arr1.shift() : result.push(arr1.shift());
         } else {
-            arr2[0] === result[result.length - 1] ? arr2.shift() : result.push(arr2.shift());
+            result.push(arr2.shift());
         }
     }
+
+    result.push(...arr1,...arr2);
     return result;
 }
 
-// console.log(merge([1, 2, 4], [1,2, 5, 8]));
-// console.log(merge([2], [1, 4]));
+console.log(merge([1, 2, 4], [1,2, 5, 8]));
+console.log(merge([2], [1, 4]));
 // console.log(/(?=.*[0-9])(?=.*[A-Z])(?=.*[a-z])^([a-zA-Z0-9_]){8,10}$/g,);
 
 console.log('100000'.replace(/(?!\b)(?=(\d{3}$))/g,','));

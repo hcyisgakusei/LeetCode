@@ -23,7 +23,7 @@ function debounce(func, wait) {
             timer = null;
         }
         timer = setTimeout(() => {
-            func(...arguments);
+            func();
         }, wait);
     }
 }

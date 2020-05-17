@@ -61,3 +61,4 @@ console.log(maxProfit([1, 2, 3, 4, 5]));
 console.log(maxProfit([]));
 console.log(maxProfit([3, 2, 6, 5, 0, 3]));
 console.log(maxProfit([2, 1, 2, 1, 0, 1, 2]));
+

@@ -25,25 +25,34 @@ Explanation: There are three ways to climb to the top.
  * @param {number} n
  * @return {number}
  */
-const climbStairs = function (n) {
-    let first = 1, second = 2;
-    if (n === 1) return first;
-    if (n === 2) return second;
-    for (let i = 3; i <= n; i++) {
-        const thisTime = first + second;
-        first = second;
-        second = thisTime;
-    }
-    return second;
-    // const stairs = [];
-    // stairs[1] = 1;
-    // stairs[2] = 2;
-    // for (let i = 3; i <= n; i++) {
-    //     stairs[i] = stairs[i - 1] + stairs[i - 2];
-    // }
-    // return stairs[n];
+// const climbStairs = function (n) {
+//   let first = 1, second = 2;
+//   if (n === 1) return first;
+//   if (n === 2) return second;
+//   for (let i = 3; i <= n; i++) {
+//     const thisTime = first + second;
+//     first = second;
+//     second = thisTime;
+//   }
+//   return second;
+//   // const stairs = [];
+//   // stairs[1] = 1;
+//   // stairs[2] = 2;
+//   // for (let i = 3; i <= n; i++) {
+//   //     stairs[i] = stairs[i - 1] + stairs[i - 2];
+//   // }
+//   // return stairs[n];
+// };
+
+
+
+const climbStairs = function (n, n1 = 1, n2 = 1) {
+  if (n <= 1) {
+    return n2;
+  }
+  return climbStairs(n - 1, n2, n1 + n2);
 };
-console.log(climbStairs(1));
-console.log(climbStairs(2));
-console.log(climbStairs(3));
-console.log(climbStairs(44));
+  console.log(climbStairs(1));
+  console.log(climbStairs(2));
+  console.log(climbStairs(3));
+  console.log(climbStairs(100));

@@ -110,6 +110,8 @@ a.func2();     // this.func1 is not a function
 
 ## 箭头函数
 
+**箭头函数里面根本没有自己的`this`，而是引用外层的`this`。**
+
 **箭头函数的this始终指向函数定义时的this，而非执行时。** 箭头函数需要记着这句话：“箭头函数中没有 this 绑定，必须通过查找作用域链来决定其值。如果箭头函数被非箭头函数包含，则 this 绑定的是最近一层非箭头函数的 this，否则，this 为 undefined”。
 
 ```javascript

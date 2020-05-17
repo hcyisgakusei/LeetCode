@@ -60,8 +60,6 @@
 }
 ```
 
-
-
 ## Flex Item 属性：
 
 有六种属性可运用在 item 项目上：
@@ -72,9 +70,6 @@
 4. **flex-basis**（项目占据的主轴空间）
 5. **flex**
 6. **align-self**（单个项目的对齐方式）
-
-
-
 - #### order: 定义项目在容器中的排列顺序，数值越小，排列越靠前，默认值为 0
 
 ```css
@@ -124,5 +119,3 @@
      align-self: auto | flex-start | flex-end | center | baseline | stretch;
 }
 ```
-
-

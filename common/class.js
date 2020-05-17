@@ -8,42 +8,42 @@
 // };
 // 等价
 class Point {
-    constructor(x, y) {
-        this.x = x;
-        this.y = y;
-    }
+  constructor(x, y) {
+    this.x = x;
+    this.y = y;
+  }
 
-    toString() {
-        return `(${this.x},${this.y})`
-    }
+  toString() {
+    return `(${this.x},${this.y})`
+  }
 }
 
 console.log(typeof Point); //function
 console.log(Point === Point.prototype.constructor); //true
 
 class Point1 {
-    constructor() {
-        // ...
-    }
+  constructor() {
+    // ...
+  }
 
-    toString() {
-        // ...
-    }
+  toString() {
+    // ...
+  }
 
-    toValue() {
-        // ...
-    }
+  toValue() {
+    // ...
+  }
 }
 
 // 等同于
 
 Point1.prototype = {
-    constructor() {
-    },
-    toString() {
-    },
-    toValue() {
-    },
+  constructor() {
+  },
+  toString() {
+  },
+  toValue() {
+  },
 };
 
 // b是B类的实例，它的constructor方法就是B类原型的constructor方法。
@@ -59,16 +59,16 @@ console.log(B.prototype.constructor === B); //true
 // 由于类的方法都定义在prototype对象上面，所以类的新方法可以添加在prototype对象上面。
 // Object.assign方法可以很方便地一次向类添加多个方法。
 class Point2 {
-    constructor() {
-        // ...
-    }
+  constructor() {
+    // ...
+  }
 }
 
 Object.assign(Point2.prototype, {
-    toString() {
-    },
-    toValue() {
-    }
+  toString() {
+  },
+  toValue() {
+  }
 });
 console.log(Point2.prototype.constructor === Point2); // true
 
@@ -82,11 +82,11 @@ console.log(Object.getOwnPropertyNames(Point2.prototype)); // [ 'constructor', '
 // 上面代码中，toString方法是 Point1 类内部定义的方法，它是不可枚举的。这一点与 ES5 的行为不一致。
 // 采用 ES5 的写法，toString方法就是可枚举的。
 const Point3 = function (x, y) {
-    // ...
+  // ...
 };
 
 Point3.prototype.toString = function () {
-    // ...
+  // ...
 };
 
 console.log(Object.keys(Point3.prototype));// ["toString"]
@@ -103,14 +103,14 @@ console.log(Object.getOwnPropertyNames(Point3.prototype)); // ["constructor","to
 //定义类
 class Point4 {
 
-    constructor(x, y) {
-        this.x = x;
-        this.y = y;
-    }
+  constructor(x, y) {
+    this.x = x;
+    this.y = y;
+  }
 
-    toString() {
-        return '(' + this.x + ', ' + this.y + ')';
-    }
+  toString() {
+    return '(' + this.x + ', ' + this.y + ')';
+  }
 
 }
 
@@ -123,13 +123,13 @@ console.log(point4.hasOwnProperty('y')); // true
 console.log(point4.hasOwnProperty('toString')); // false
 console.log(point4.__proto__.hasOwnProperty('toString')); // true
 console.log(Point4.prototype.hasOwnProperty('toString')); // true
-console.log( point4.__proto__ === Point4.prototype); // true
+console.log(point4.__proto__ === Point4.prototype); // true
 
 
 // 与 ES5 一样，类的所有实例共享一个原型对象。
 
-const p4_1 = new Point4(2,3);
-const p4_2 = new Point4(3,2);
+const p4_1 = new Point4(2, 3);
+const p4_2 = new Point4(3, 2);
 
 console.log(p4_1.__proto__ === p4_2.__proto__)//true
 // 上面代码中，p1和p2都是Point的实例，它们的原型都是Point.prototype，所以__proto__属性是相等的。
@@ -140,15 +140,18 @@ console.log(p4_1.__proto__ === p4_2.__proto__)//true
 // 生产环境中，我们可以使用 Object.getPrototypeOf 方法来获取实例对象的原型，然后再来为原型添加方法/属性。
 
 
-
-p4_1.__proto__.printName = function () { return 'Oops' };
+p4_1.__proto__.printName = function () {
+  return 'Oops'
+};
 // 等同于
-Object.getPrototypeOf(p4_1).printName = function() {return 'Oops'};
+Object.getPrototypeOf(p4_1).printName = function () {
+  return 'Oops'
+};
 
 console.log(p4_1.printName()); // "Oops"
 console.log(p4_2.printName()); // "Oops"
 
-const p4_3 = new Point4(4,2);
+const p4_3 = new Point4(4, 2);
 console.log(p4_3.printName()); // "Oops"
 
 // 上面代码在p1的原型上添加了一个printName方法，由于p1的原型就是p2的原型，因此p2也可以调用这个方法。
@@ -160,15 +163,17 @@ console.log(p4_3.printName()); // "Oops"
 // 与 ES5 一样，在“类”的内部可以使用get和set关键字，对某个属性设置存值函数和取值函数，拦截该属性的存取行为。
 
 class MyClass {
-    constructor() {
-        // ...
-    }
-    get prop() {
-        return 'getter';
-    }
-    set prop(value) {
-        console.log('setter: '+value);
-    }
+  constructor() {
+    // ...
+  }
+
+  get prop() {
+    return 'getter';
+  }
+
+  set prop(value) {
+    console.log('setter: ' + value);
+  }
 }
 
 let inst = new MyClass();
@@ -185,19 +190,22 @@ console.log(inst.prop); // getter
 // 。这种规定的原因与下文要提到的继承有关，必须保证子类在父类之后定义。
 
 {
-    let Foo_1 = class {};
-    class Bar_1 extends Foo_1 {
-    }
+  let Foo_1 = class {
+  };
+
+  class Bar_1 extends Foo_1 {
+  }
 }
 //  上面的代码不会报错，因为Bar继承Foo的时候，Foo已经有定义了。
 // 但是，如果存在class的提升，上面代码就会报错，因为class会被提升到代码头部，而let命令是不提升的，
 // 所以导致Bar继承Foo的时候，Foo还没有定义。
 
 
-
 // 由于本质上，ES6 的类只是 ES5 的构造函数的一层包装，所以函数的许多特性都被Class继承，包括name属性。
 
-class Point5 {}
+class Point5 {
+}
+
 console.log(Point5.name); // "Point"
 // name属性总是返回紧跟在class关键字后面的类名。
 
@@ -207,18 +215,19 @@ console.log(Point5.name); // "Point"
 // 如果某个方法之前加上星号（*），就表示该方法是一个 Generator 函数。
 
 class Foo1 {
-    constructor(...args) {
-        this.args = args;
+  constructor(...args) {
+    this.args = args;
+  }
+
+  * [Symbol.iterator]() {
+    for (let arg of this.args) {
+      yield arg;
     }
-    * [Symbol.iterator]() {
-        for (let arg of this.args) {
-            yield arg;
-        }
-    }
+  }
 }
 
 for (let x of new Foo1('hello', 'world')) {
-    console.log(x);
+  console.log(x);
 }
 // hello
 // world
@@ -230,9 +239,9 @@ for (let x of new Foo1('hello', 'world')) {
 // 如果在一个方法前，加上static关键字，就表示该方法不会被实例继承，而是直接通过类来调用，这就称为“静态方法”。
 
 class Foo2 {
-    static classMethod() {
-        return 'hello';
-    }
+  static classMethod() {
+    return 'hello';
+  }
 }
 
 Foo2.classMethod(); // 'hello'
@@ -245,15 +254,17 @@ Foo2.classMethod(); // 'hello'
 
 // 注意，如果静态方法包含this关键字，这个this指的是类，而不是实例
 class Foo3 {
-    static bar() {
-        this.baz();
-    }
-    static baz() {
-        console.log('hello');
-    }
-    baz() {
-        console.log('world');
-    }
+  static bar() {
+    this.baz();
+  }
+
+  static baz() {
+    console.log('hello');
+  }
+
+  baz() {
+    console.log('world');
+  }
 }
 
 Foo3.bar(); // hello
@@ -263,9 +274,9 @@ Foo3.bar(); // hello
 // 父类的静态方法，可以被子类继承。
 
 class Foo4 {
-    static classMethod() {
-        return 'hello';
-    }
+  static classMethod() {
+    return 'hello';
+  }
 }
 
 class Bar extends Foo4 {
@@ -277,15 +288,15 @@ class Bar extends Foo4 {
 //静态方法也是可以从super对象上调用的。
 
 class Foo5 {
-    static classMethod() {
-        return 'hello';
-    }
+  static classMethod() {
+    return 'hello';
+  }
 }
 
 class Bar1 extends Foo5 {
-    static classMethod() {
-        return super.classMethod() + ', too';
-    }
+  static classMethod() {
+    return super.classMethod() + ', too';
+  }
 }
 
 console.log(Bar1.classMethod()); // "hello, too"
@@ -294,29 +305,34 @@ console.log(Bar1.classMethod()); // "hello, too"
 // 实例属性除了定义在constructor()方法里面的this上面，也可以定义在类的最顶层。
 
 class IncreasingCounter1 {
-    constructor() {
-        this._count = 0;
-    }
-    get value() {
-        console.log('Getting the current value!');
-        return this._count;
-    }
-    increment() {
-        this._count++;
-    }
+  constructor() {
+    this._count = 0;
+  }
+
+  get value() {
+    console.log('Getting the current value!');
+    return this._count;
+  }
+
+  increment() {
+    this._count++;
+  }
 }
+
 // 上面代码中，实例属性this._count定义在constructor()方法里面。另一种写法是，这个属性也可以定义在类的最顶层，其他都不变。
 
 class IncreasingCounter2 {
-    // _count =  0;
-    get value() {
-        console.log('Getting the current value!');
-        return this._count;
-    }
-    increment() {
-        this._count++;
-    }
+  // _count =  0;
+  get value() {
+    console.log('Getting the current value!');
+    return this._count;
+  }
+
+  increment() {
+    this._count++;
+  }
 }
+
 // 上面代码中，实例属性_count与取值函数value()和increment()方法，处于同一个层级。这时，不需要在实例属性前面加上this。
 
 //静态属性

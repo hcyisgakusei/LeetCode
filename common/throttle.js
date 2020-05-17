@@ -18,7 +18,7 @@ function throttle(func, wait) {
     return () => {
         const now = new Date();
         if (!lastTime || now - lastTime > wait) {
-            func(arguments);
+            func();
             lastTime = now;
         }
 
