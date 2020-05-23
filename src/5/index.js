@@ -63,10 +63,10 @@ const longestPalindrome = function (s) {
       }
       if (resultArr[j] > max) {
         // 求出最长公共子串后，并不一定是回文串，我们还需要判断该字符串倒置前的下标和当前的字符串下标是不是匹配。
-        const startIndex = j - resultArr[j] -1;
-        if (length - 1 - startIndex === j) {
-            max = resultArr[j];
-            lastIndex = j;
+        const startIndex = j - resultArr[j] + 1;
+        if (length - 1 - startIndex === i) {
+          max = resultArr[j];
+          lastIndex = j;
         }
 
 
@@ -77,6 +77,9 @@ const longestPalindrome = function (s) {
         //   lastIndex = j;
         // }
       }
+
+      console.log('***i****', i, '***max****', max, '***lastIndex***', lastIndex);
+      console.log('***j****', j, '***max****', max, '***lastIndex***', lastIndex);
     }
 
   }
@@ -84,8 +87,8 @@ const longestPalindrome = function (s) {
   return reverseS.substring(lastIndex - max + 1, lastIndex + 1);
 };
 
-console.log(longestPalindrome('aacdefcaa'));
-console.log(longestPalindrome('babad'));
-console.log(longestPalindrome('cbbd'));
+console.log(longestPalindrome('adceaa'));
+// console.log(longestPalindrome('babad'));
+// console.log(longestPalindrome('cbbd'));
 
 

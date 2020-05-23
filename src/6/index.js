@@ -54,7 +54,7 @@ T     S     G
 
 const convert = (s, numRows) => {
   if (numRows === 1) return s;
-  const numArr = Array.from({length: numRows}, (index) => []);
+  const numArr = Array.from({length: numRows}, () => []);
   let up = false;
   let index = 0;
   for (let i = 0; i < s.length; i++) {

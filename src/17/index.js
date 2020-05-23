@@ -1,16 +1,16 @@
 /*
-17. Letter Combinations of a Phone Number (Medium)
-Question:
-Given a string containing digits from 2-9 inclusive, return all possible letter combinations that the number could represent.
+17. 电话号码的字母组合(中等)
 
-A mapping of digit to letters (just like on the telephone buttons) is given below. Note that 1 does not map to any letters.
-Example:
+问题:
+给定一个仅包含数字 2-9 的字符串，返回所有它能表示的字母组合。
+给出数字到字母的映射如下（与电话按键相同）。注意 1 不对应任何字母。
 
-Input: "23"
-Output: ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"].
-Note:
+示例:
+输入："23"
+输出：["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"].
+说明:
+尽管上面的答案是按字典序排列的，但是你可以任意选择答案输出的顺序。
 
-Although the above answer is in lexicographical order, your answer could be in any order you want.
  */
 
 /**
@@ -18,36 +18,34 @@ Although the above answer is in lexicographical order, your answer could be in a
  * @return {string[]}
  */
 const letterCombinations = function (digits) {
-    const twoArrCombinations = (arr1, arr2) => {
-        const result = [];
-        console.log(typeof  arr2)
-        arr1.forEach((arr1Item) => {
-            arr2.forEach((arr2Item) => {
-                result.push(`${arr1Item}${arr2Item}`);
-            });
-        });
-        return result;
-    };
-    const mapObj = {
-        '2': ['a', 'b', 'c'],
-        '3': ['d', 'e', 'f'],
-        '4': ['g', 'h', 'i'],
-        '5': ['j', 'k', 'l'],
-        '6': ['m', 'n', 'o'],
-        '7': ['p', 'q', 'r', 's'],
-        '8': ['t', 'u', 'v'],
-        '9': ['w', 'x', 'y', 'z'],
-    };
-    const digitsArr = [];
-    for (let i = 0; i < digits.length; i++) {
-        digitsArr.push(mapObj[digits[i]])
-    }
-    while (digitsArr.length > 1) {
-        const combinations = twoArrCombinations(digitsArr.shift(), digitsArr.shift());
-        digitsArr.unshift(combinations);
-    }
-    return digitsArr[0] || [];
+  const twoArrCombinations = (arr1, arr2) => {
+    if (arr1.length === 0 || arr2.length === 0) return [...arr1, ...arr2];
+    const result = [];
+    arr1.forEach((arr1Item) => {
+      arr2.forEach((arr2Item) => {
+        result.push(`${arr1Item}${arr2Item}`);
+      });
+    });
+    return result;
+  };
+  const mapObj = {
+    '2': ['a', 'b', 'c'],
+    '3': ['d', 'e', 'f'],
+    '4': ['g', 'h', 'i'],
+    '5': ['j', 'k', 'l'],
+    '6': ['m', 'n', 'o'],
+    '7': ['p', 'q', 'r', 's'],
+    '8': ['t', 'u', 'v'],
+    '9': ['w', 'x', 'y', 'z'],
+  };
+  let result = [];
+  for (let i = 0; i < digits.length; i++) {
+    result = twoArrCombinations(result, mapObj[digits[i]]);
+  }
+  return result;
 };
+
+
 console.log(letterCombinations('2'));
-console.log(letterCombinations('2'));
+console.log(letterCombinations('23'));
 console.log(letterCombinations('234'));

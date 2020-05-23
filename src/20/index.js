@@ -1,35 +1,34 @@
 /*
- 20. Valid Parentheses (Easy)
+20. 有效的括号（简单）
 
-Question:
-Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+问题：
+给定一个只包括 '('，')'，'{'，'}'，'['，']' 的字符串，判断字符串是否有效。
 
-    An input string is valid if:
+有效字符串需满足：
 
-Open brackets must be closed by the same type of brackets.
-    Open brackets must be closed in the correct order.
-    Note that an empty string is also considered valid.
+左括号必须用相同类型的右括号闭合。
+左括号必须以正确的顺序闭合。
+注意空字符串可被认为是有效字符串。
 
-    Example 1:
+示例 1:
+输入: "()"
+输出: true
 
-Input: "()"
-Output: true
-Example 2:
+示例 2:
+输入: "()[]{}"
+输出: true
 
-Input: "()[]{}"
-Output: true
-Example 3:
+示例 3:
+输入: "(]"
+输出: false
 
-Input: "(]"
-Output: false
-Example 4:
+示例 4:
+输入: "([)]"
+输出: false
 
-Input: "([)]"
-Output: false
-Example 5:
-
-Input: "{[]}"
-Output: true
+示例 5:
+输入: "{[]}"
+输出: true
 */
 
 /**
@@ -37,37 +36,22 @@ Output: true
  * @return {boolean}
  */
 const isValid = function (s) {
-    if (s.length % 2 === 1) {
-        return false;
+  if (s.length % 2 !== 0) {
+    return false;
+  }
+  const stuck = [];
+  for (let i = 0; i < s.length; i++) {
+    if (s[i] === '(' || s[i] === '{' || s[i] === '[') {
+      stuck.push(s[i]);
+    } else if (s[i] === ')') {
+      if (stuck.pop() !== '(') return false;
+    } else if (s[i] === '}') {
+      if (stuck.pop() !== '{') return false;
+    } else if (s[i] === ']') {
+      if (stuck.pop() !== '[') return false;
     }
-    while(~s.indexOf('()') || ~s.indexOf('{}') || ~s.indexOf('[]')){
-      s = s.replace('()','').replace('{}','').replace('[]','');
-    }
-    return s.length === 0 ;
-    // if (s.length % 2 === 1) {
-    //     return false;
-    // }
-    // const startArr = ['(', '{', '['];
-    // const endArr = [')', '}', ']'];
-    // const result = [];
-    // let starEnd = false;
-    // for (let i = 0; i < s.length; i++) {
-    //     if (~startArr.indexOf(s[i])) {
-    //         if (starEnd) {
-    //             return false;
-    //         }
-    //         result.push(startArr.indexOf(s[i]));
-    //     }
-    //     if (~endArr.indexOf(s[i])) {
-    //         if (!starEnd) {
-    //             starEnd = false;
-    //         }
-    //         if (result.length === 0 || endArr.indexOf(s[i]) !== result.pop()) {
-    //             return false;
-    //         }
-    //     }
-    // }
-    // return result.length === 0;
+  }
+  return stuck.length === 0;
 };
 
 console.log(isValid('()'));
