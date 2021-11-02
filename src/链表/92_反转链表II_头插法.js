@@ -27,25 +27,19 @@ const ListNode = require('../../common/listNode').ListNode;
  * @return {ListNode}
  */
 var reverseBetween = function (head, left, right) {
-    if (left === right) return head;
-    let headTop = head, start = head.next, end = head;
-    for (let i = 1; i < left - 1; i++) {
-        headTop = headTop.next;
-        start = start.next;
+    if (!head || !head.next || left === right) return head;
+    let guard = null, point = head;
+    for (let i = 1; i < left; i++) {
+        guard = guard ? guard.next : head;
+        point = point.next;
     }
-    for (let i = 0; i < right; i++) {
-        end = end.next;
+    for (let i = 1; i < right - left; i++) {
+        const remove = point.next;
+        point.next = point.next.next;
+        remove.next = guard.next;   // remove.next = point;
+        guard.next =remove;
     }
-    let pre = null, cur = start;
-    for (let i = 0; i < right - left + 1 && cur; i++) {
-        const next = cur.next;
-        cur.next = pre;
-        pre = cur;
-        cur = next;
-    }
-    headTop.next = pre;
-    start && (start.next = end);
-    return headTop;
+    return guard;
 };
 
 
@@ -61,6 +55,4 @@ current = current.next;
 current.next = new ListNode(5);
 current = current.next;
 
-console.log(JSON.stringify(params))
-
-console.log('**result**', reverseBetween(params, 2, 4));
+console.log('**result**', JSON.stringify(reverseBetween(params, 2, 4)));

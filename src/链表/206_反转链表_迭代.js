@@ -27,7 +27,6 @@ const reverseList = function (head) {
     // pre 指向null cur 指向 1 ，cur.next  = pre 反转 ，得到 1 ->null
     // pre 指向上一步反转的结果 1->null, cur 往前挪 指向 2
     // 一直反转得到 2->1->null , 3->2->1->null
-
     let pre, cur = head;
     while (cur) {
         const next = cur.next;
