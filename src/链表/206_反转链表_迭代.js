@@ -24,14 +24,18 @@ const ListNode = require('../../common/listNode');
  * @return {ListNode}
  */
 const reverseList = function (head) {
-  let pre, cur = head;
-  while (cur) {
-    const next = cur.next;
-    cur.next = pre;
-    pre = cur;
-    cur = next;
-  }
-  return pre;
+    // 假设head 1->2->3
+    // pre 指向null cur 指向 1 ，cur.next  = pre 反转 ，得到 1 ->null
+    // pre 指向上一步反转的结果 1->null, cur 往前挪 指向 2
+    // 一直反转得到 2->1->null , 3->2->1->null
+    let pre, cur = head;
+    while (cur) {
+        const next = cur.next;
+        cur.next = pre;
+        pre = cur;
+        cur = next;
+    }
+    return pre;
 };
 
 let params;
@@ -41,6 +45,4 @@ current.next = new ListNode(2);
 current = current.next;
 current.next = new ListNode(3);
 current = current.next;
-
-
-console.log('**result**',reverseList(params))
+console.log('**result**', reverseList(params));

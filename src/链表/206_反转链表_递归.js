@@ -23,13 +23,15 @@ const ListNode = require('../../common/listNode');
  * @param {ListNode} head
  * @return {ListNode}
  */
-
 const reverseList = function (head) {
-  if(!head || !head.next) return head;
-  const node =  reverseList(head.next);
-  head.next.next = head ;
-  head.next  = null;
-  return node;
+    // 假设head 1->2->3->4->5
+    // reverseList(head.next) 得到 1->2<-3<-4<-5
+    // 只需把1->2 变成 2->1
+    if (!head || !head.next) return head;
+    const node = reverseList(head.next);
+    head.next.next = head;
+    head.next = null;
+    return node;
 };
 
 
@@ -42,4 +44,4 @@ current.next = new ListNode(3);
 current = current.next;
 
 
-console.log('**result**',reverseList(params))
+console.log('**result**', reverseList(params))
