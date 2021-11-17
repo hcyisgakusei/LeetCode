@@ -1,20 +1,19 @@
 /**
- * 92. 反转链表II 【中等】
- * 链接：https://leetcode-cn.com/problems/reverse-linked-list-ii/
- * 给你单链表的头指针 head 和两个整数 left 和 right ，其中 left <= right 。
- * 请你反转从位置 left 到位置 right 的链表节点，返回 反转后的链表 。
+ * 94. 二叉树的中序遍历 【简单】
+ * https://leetcode-cn.com/problems/binary-tree-inorder-traversal/
+ * 给定一个二叉树的根节点 root ，返回它的 中序 遍历。
  *
  * 示例 1：
- * 输入：head = [1,2,3,4,5], left = 2, right = 4
- * 输出：[1,4,3,2,5]
+ * 输入：root = [1,null,2,3]
+ * 输出：[1,3,2]
  *
  * 示例 2：
- * 输入：head = [1,2]
- * 输出：[2,1]
+ * 输入：root = []
+ * 输出：[]
  *
  * 示例 3：
- * 输入：head = []
- * 输出：[]
+ * 输入：root = [1]
+ * 输出：[1]
  */
 
 

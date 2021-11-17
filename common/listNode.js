@@ -3,6 +3,5 @@ function ListNode(val, next) {
   this.next = (next === undefined ? null : next)
 }
 
-module.exports = {
-  ListNode
-};
+module.exports = ListNode;
+
