@@ -18,7 +18,7 @@
  */
 
 
-const ListNode = require('../../common/listNode').ListNode;
+const ListNode = require('../../common/listNode');
 
 
 /**
