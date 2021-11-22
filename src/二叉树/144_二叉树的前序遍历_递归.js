@@ -31,7 +31,7 @@ const TreeNode = require('../../common/treeNode');
  * @param {TreeNode} root
  * @return {number[]}
  */
-var preorderTraversal = function(root) {
+var preorderTraversal = function(root) { // 根 --> 左 --> 右
     const result = [];
     function preorderTraversalPush(node){
       if(!node) return;

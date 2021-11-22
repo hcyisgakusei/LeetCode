@@ -24,7 +24,7 @@ const TreeNode = require('../../common/treeNode');
  * @param {TreeNode} root
  * @return {number[]}
  */
-var inorderTraversal = function (root){
+var inorderTraversal = function (root){ //  左 --> 根 --> 右
   const result = [];
 
   function pushInorderTraversal(node){
