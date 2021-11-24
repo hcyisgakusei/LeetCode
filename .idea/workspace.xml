@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8154c51a-3802-4b6b-84a5-28177a5ee70d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/二叉树/145_二叉树的后序遍历_迭代.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/二叉树/145_二叉树的后序遍历_递归.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/数组&amp;双指针/1_两数之和.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/数组&amp;双指针/283_移动零_一次遍历.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/数组&amp;双指针/283_移动零_双指针.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/数组/136_只出现一次的数字_位运算符.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/数组/169_多数元素_哈希.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/数组/169_多数元素_摩尔投票法.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/数组/217_存在重复元素_Set.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/数组/217_存在重复元素_哈希.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/二叉树/144_二叉树的前序遍历_迭代.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/二叉树/144_二叉树的前序遍历_迭代.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/二叉树/144_二叉树的前序遍历_递归.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/二叉树/144_二叉树的前序遍历_递归.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/二叉树/94_二叉树的中序遍历_迭代.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/二叉树/94_二叉树的中序遍历_迭代.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/二叉树/94_二叉树的中序遍历_递归.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/二叉树/94_二叉树的中序遍历_递归.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,26 +22,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/二叉树/145_二叉树的后序遍历_迭代.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="1277" column="4" selection-start-line="1277" selection-start-column="4" selection-end-line="1277" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -71,6 +54,18 @@
         <option value="$PROJECT_DIR$/src/二叉树/94_二叉树的中序遍历_递归.js" />
         <option value="$PROJECT_DIR$/src/二叉树/94_二叉树的中序遍历_迭代.js" />
         <option value="$PROJECT_DIR$/src/二叉树/145_二叉树的后序遍历_迭代.js" />
+        <option value="$PROJECT_DIR$/src/二叉树/145_二叉树的后序遍历_递归.js" />
+        <option value="$PROJECT_DIR$/src/数组/1_两数之和.js" />
+        <option value="$PROJECT_DIR$/src/数组/283_移动零.js" />
+        <option value="$PROJECT_DIR$/src/b.js" />
+        <option value="$PROJECT_DIR$/src/test.js" />
+        <option value="$PROJECT_DIR$/src/a.js" />
+        <option value="$PROJECT_DIR$/src/数组/283_移动零_换位.js" />
+        <option value="$PROJECT_DIR$/src/数组/136_只出现一次的数字_位运算符.js" />
+        <option value="$PROJECT_DIR$/src/数组/169_多数元素.js" />
+        <option value="$PROJECT_DIR$/src/数组/169_多数元素_摩尔投票法.js" />
+        <option value="$PROJECT_DIR$/src/数组/217_存在重复元素_哈希.js" />
+        <option value="$PROJECT_DIR$/src/数组/217_存在重复元素_Set.js" />
       </list>
     </option>
   </component>
@@ -93,14 +88,16 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="height" value="828" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -113,22 +110,15 @@
               <item name="LeetCode" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="LeetCode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LeetCode" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="链表" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/二叉树" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/数组" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -139,8 +129,12 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/数组" />
       <recent name="$PROJECT_DIR$/src/二叉树" />
       <recent name="$PROJECT_DIR$/src/链表" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -176,18 +170,18 @@
       <workItem from="1635648949599" duration="6491000" />
       <workItem from="1635867522078" duration="3137000" />
       <workItem from="1637574460509" duration="872000" />
-      <workItem from="1637576554179" duration="1955000" />
+      <workItem from="1637576554179" duration="8757000" />
+      <workItem from="1637740816357" duration="4153000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22717000" />
+    <option name="totallyTimeSpent" value="33672000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49879518" visible="true" weight="0.19170243" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49879518" visible="true" weight="0.19456366" />
       <window_info id="Structure" order="1" sideWeight="0.50120485" side_tool="true" weight="0.19170243" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -199,8 +193,8 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3493976" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49928468" visible="true" weight="0.30963856" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007153" side_tool="true" weight="0.30963856" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -247,13 +241,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/链表/92_反转链表II_头插法.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="37" column="26" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/二叉树/144_二叉树的前序遍历_递归.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="533">
@@ -265,13 +252,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="26" column="57" selection-start-line="26" selection-start-column="57" selection-end-line="26" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/二叉树/145_二叉树的后序遍历_递归.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -289,6 +269,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/二叉树/145_二叉树的后序遍历_迭代.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" selection-start-line="18" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/二叉树/145_二叉树的后序遍历_递归.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -296,10 +290,81 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/二叉树/145_二叉树的后序遍历_迭代.js">
+    <entry file="file://$PROJECT_DIR$/src/链表/92_反转链表II_头插法.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+        <state relative-caret-position="629">
+          <caret line="37" column="26" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/b.js" />
+    <entry file="file://$PROJECT_DIR$/src/数组&amp;双指针/283_移动零_双指针.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/a.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/数组&amp;双指针/1_两数之和.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="2" lean-forward="true" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/数组&amp;双指针/283_移动零_一次遍历.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/数组/169_多数元素_摩尔投票法.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="26" column="62" lean-forward="true" selection-start-line="26" selection-start-column="62" selection-end-line="26" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/数组/136_只出现一次的数字_位运算符.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/数组/169_多数元素_哈希.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/数组/217_存在重复元素_Set.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/数组/217_存在重复元素_哈希.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="29" column="12" lean-forward="true" selection-end-line="40" />
         </state>
       </provider>
     </entry>
