@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  var minWindow = function (s, t) {
+    if (t.length > s.length) {
+      return '';
+    }
+    let result = '', tNew, j;
+    for (let i = 0; i < s.length; i++) {
+      tNew = t;
+      if (tNew.includes(s[i])) {
+        tNew = tNew.replace(s[i], '');
+      }
+      j = i + 1;
+      while (tNew.length && j < s.length) {
+        if (tNew.includes(s[j])) {
+          tNew = tNew.replace(s[j], '');
+        }
+        j++;
+      }
+      if (tNew.length === 0 && (!result || j - i < result.length)) {
+        result = s.slice(i, j);
+      }
+
+    }
+
+    return result;
+
+  };
+  console.log(minWindow('BANC', 'ABC'));
+</script>
+</body>
+</html>

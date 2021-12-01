@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8154c51a-3802-4b6b-84a5-28177a5ee70d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/数组&amp;双指针/75_颜色分类.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/数组&amp;双指针/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/数组&amp;双指针/76_最小覆盖子串_滑动窗口.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/数组&amp;双指针/15_三数之和.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/数组&amp;双指针/15_三数之和.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/数组&amp;双指针/75_颜色分类.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/数组&amp;双指针/75_颜色分类_荷兰国旗.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,20 +18,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/数组&amp;双指针/15_三数之和.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="39" column="29" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/数组&amp;双指针/75_颜色分类.js">
+        <entry file="file://$PROJECT_DIR$/src/数组&amp;双指针/76_最小覆盖子串_滑动窗口.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
+            <state relative-caret-position="109">
+              <caret line="32" selection-start-line="32" selection-end-line="56" selection-end-column="2" />
+              <folding>
+                <element signature="e#477#546#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -49,6 +43,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>head</find>
+      <find>console.lo</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -84,6 +79,9 @@
         <option value="$PROJECT_DIR$/src/数组&amp;双指针/test.html" />
         <option value="$PROJECT_DIR$/src/数组&amp;双指针/15_三数之和.js" />
         <option value="$PROJECT_DIR$/src/数组&amp;双指针/75_颜色分类.js" />
+        <option value="$PROJECT_DIR$/src/数组&amp;双指针/75_颜色分类_荷兰国旗.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/src/数组&amp;双指针/76_最小覆盖子串.js" />
       </list>
     </option>
   </component>
@@ -105,7 +103,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="828" />
@@ -153,14 +151,16 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/数组&amp;双指针" />
+      <recent name="$PROJECT_DIR$/src/基础数据类型" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/数组&amp;双指针" />
       <recent name="$PROJECT_DIR$/src/数组" />
       <recent name="$PROJECT_DIR$/src/二叉树" />
       <recent name="$PROJECT_DIR$/src/链表" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -199,19 +199,25 @@
       <workItem from="1637576554179" duration="8757000" />
       <workItem from="1637740816357" duration="4181000" />
       <workItem from="1637823970868" duration="1310000" />
-      <workItem from="1637832217888" duration="5987000" />
+      <workItem from="1637832217888" duration="6151000" />
+      <workItem from="1638262423577" duration="126000" />
+      <workItem from="1638262603865" duration="29000" />
+      <workItem from="1638269667226" duration="1996000" />
+      <workItem from="1638344104253" duration="223000" />
+      <workItem from="1638344429295" duration="1654000" />
+      <workItem from="1638346564039" duration="6000" />
+      <workItem from="1638350646981" duration="624000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40997000" />
+    <option name="totallyTimeSpent" value="45819000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49759036" visible="true" weight="0.20028612" />
-      <window_info id="Structure" order="1" sideWeight="0.50240964" side_tool="true" visible="true" weight="0.20028612" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48358208" weight="0.21459228" />
+      <window_info id="Structure" order="1" sideWeight="0.5164179" side_tool="true" visible="true" weight="0.21459228" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -222,7 +228,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49928468" weight="0.30963856" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49928468" visible="true" weight="0.19277108" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007153" side_tool="true" weight="0.30963856" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -378,17 +384,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/数组&amp;双指针/1_两数之和.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="33" column="12" lean-forward="true" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/数组&amp;双指针/test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="178">
           <caret line="30" column="30" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/数组&amp;双指针/1_两数之和.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/数组&amp;双指针/75_颜色分类_荷兰国旗.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
         </state>
       </provider>
     </entry>
@@ -399,10 +412,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/数组&amp;双指针/75_颜色分类.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
+        <state relative-caret-position="353">
+          <caret line="34" column="12" selection-start-line="34" selection-start-column="2" selection-end-line="34" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/数组&amp;双指针/76_最小覆盖子串_滑动窗口.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="32" selection-start-line="32" selection-end-line="56" selection-end-column="2" />
+          <folding>
+            <element signature="e#477#546#0" />
+          </folding>
         </state>
       </provider>
     </entry>

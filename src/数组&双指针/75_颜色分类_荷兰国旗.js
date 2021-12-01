@@ -27,12 +27,35 @@
  * @return {void} Do not return anything, modify nums in-place instead.
  */
 var sortColors = function (nums) {
+  const swap = (arr, index1, index2) => {
+    const temp = arr[index1];
+    arr[index1] = arr[index2];
+    arr[index2] = temp;
+  };
   if (nums.length <= 1) return nums;
-
+  // all in [0,start) 0
+  // all in [start,i) 1
+  // all in [end,len-1] 2
+  // i >= p2 中止循环
+  let start = 0, i = 0, last = nums.length - 1;
+  while (last >= i) {
+    if (nums[i] === 0) {
+      swap(nums, start, i);
+      start++;
+      i++;
+    } else if (nums[i] === 1) {
+      i++;
+    } else {
+      swap(nums, i, last);
+      last--;
+    }
+  }
+  return nums;
 };
 
 console.log(sortColors([2, 0, 2, 1, 1, 0]));
 console.log(sortColors([2, 0, 1]));
 console.log(sortColors([0]));
+console.log(sortColors([1, 0, 2, 1, 2, 1, 1, 1, 0, 1]));
 console.log(sortColors([1]));
 
