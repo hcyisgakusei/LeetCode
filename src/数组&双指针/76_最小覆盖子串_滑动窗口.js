@@ -30,31 +30,56 @@
  * @param {string} t
  * @return {string}
  */
-var minWindow = function (s, t) {
-  if (t.length > s.length) {
+const minWindow = function (s, t) {
+  /*
+  * 思路和算法
+  * 本问题要求我们返回字符串 s 中包含字符串 t 的全部字符的最小窗口。我们称包含 t 的全部字母的窗口为「可行」窗口。
+  * 我们可以用滑动窗口的思想解决这个问题。在滑动窗口类型的问题中都会有两个指针，一个用于「延伸」现有窗口的 r 指针，和一个用于「收缩」窗口的指针。
+  * 在任意时刻，只有一个指针运动，而另一个保持静止。
+  * 我们在 s 上滑动窗口，通过移动 r 指针不断扩张窗口。当窗口包含 t 全部所需的字符后，如果能收缩，我们就收缩窗口直到得到最小窗口。
+  * */
+  if (s.length < t.length) return '';
+  const sArr = s.split(''), tArr = t.split(''), sLen = sArr.length, tLen = tArr.length, sMap = {}, tMap = {};
+  let minWindow = sLen + 1, begin = 0, left = 0, right = 0, distance = 0; // left:左窗口 right：右窗口 distance：匹配数量
+  tArr.forEach(str => {
+    tMap[str] = tMap[str] ? tMap[str] + 1 : 1;
+    sMap[str] = 0;
+  });
+  while (right < sLen) {
+    // 延伸窗口，找到符合条件的字符串
+    const rightStr = sArr[right];
+    if (!tMap[rightStr]) {
+      right++;
+    }else {
+      if (sMap[rightStr] < tMap[rightStr]) {
+        distance++;
+      }
+      sMap[rightStr] = sMap[rightStr] + 1;
+      right++;
+    }
+    while (distance === tLen && right - left >= tLen) { // 收缩窗口，找到最短子串
+      if (right - left < minWindow) {
+        minWindow = right - left;
+        begin = left;
+      }
+      const leftStr = sArr[left];
+      if (!tMap[leftStr]) {
+        left++;
+      }else{
+        if (sMap[leftStr] <= tMap[leftStr]) {
+          distance--;
+        }
+        sMap[leftStr] = sMap[leftStr] - 1;
+        left++;
+      }
+
+    }
+  }
+  if (minWindow === sLen + 1) {
     return '';
   }
-  let result = '', tNew, j;
-  for (let i = 0; i < s.length; i++) {
-    tNew = t;
-    if (tNew.includes(s[i])) {
-      tNew = tNew.replace(s[i], '');
-    }
-    j = i + 1;
-    while (tNew.length && j < s.length) {
-      if (tNew.includes(s[j])) {
-        tNew = tNew.replace(s[j], '');
-      }
-      j++;
-    }
-
-    if (tNew.length === 0 && (!result || j - i < result.length)) {
-      result = s.slice(i, j);
-    }
-
-  }
-  return result;
+  return s.substring(begin, begin + minWindow);
 };
-console.log(minWindow('ADOBECODEBANC', 'ABC'));
-console.log(minWindow('a', 'a'));
-console.log(minWindow('a', 'aa'));
+console.log(minWindow('ADOBECODEBANC', 'ABC')); // "BANC"
+console.log(minWindow('a', 'a')); // "a"
+console.log(minWindow('a', 'aa')); //  ""
