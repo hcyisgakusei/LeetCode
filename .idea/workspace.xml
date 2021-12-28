@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8154c51a-3802-4b6b-84a5-28177a5ee70d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/数组&amp;双指针/4_寻找两个正序数组的中位数.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/数组&amp;双指针/76_最小覆盖子串_滑动窗口.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/数组&amp;双指针/76_最小覆盖子串_滑动窗口.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/数组&amp;双指针/4_寻找两个正序数组的中位数.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/数组&amp;双指针/4_寻找两个正序数组的中位数.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/数组&amp;双指针/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/数组&amp;双指针/test.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,8 +20,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/数组&amp;双指针/4_寻找两个正序数组的中位数.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="54" selection-start-line="35" selection-end-line="54" />
+            <state relative-caret-position="350">
+              <caret line="69" column="86" selection-start-line="69" selection-start-column="86" selection-end-line="69" selection-end-column="86" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/数组&amp;双指针/test.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -72,7 +81,6 @@
         <option value="$PROJECT_DIR$/src/数组/169_多数元素_摩尔投票法.js" />
         <option value="$PROJECT_DIR$/src/数组/217_存在重复元素_哈希.js" />
         <option value="$PROJECT_DIR$/src/数组/217_存在重复元素_Set.js" />
-        <option value="$PROJECT_DIR$/src/数组&amp;双指针/test.html" />
         <option value="$PROJECT_DIR$/src/数组&amp;双指针/15_三数之和.js" />
         <option value="$PROJECT_DIR$/src/数组&amp;双指针/75_颜色分类.js" />
         <option value="$PROJECT_DIR$/src/数组&amp;双指针/75_颜色分类_荷兰国旗.js" />
@@ -80,6 +88,7 @@
         <option value="$PROJECT_DIR$/src/数组&amp;双指针/76_最小覆盖子串.js" />
         <option value="$PROJECT_DIR$/src/数组&amp;双指针/76_最小覆盖子串_滑动窗口.js" />
         <option value="$PROJECT_DIR$/src/数组&amp;双指针/1_两数之和.js" />
+        <option value="$PROJECT_DIR$/src/数组&amp;双指针/test.html" />
         <option value="$PROJECT_DIR$/src/数组&amp;双指针/4_寻找两个正序数组的中位数.js" />
       </list>
     </option>
@@ -94,28 +103,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="LeetCode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LeetCode" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LeetCode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LeetCode" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LeetCode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LeetCode" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="数组&amp;双指针" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -192,18 +180,22 @@
       <workItem from="1639118905274" duration="116000" />
       <workItem from="1639125798814" duration="1441000" />
       <workItem from="1639129745487" duration="1247000" />
+      <workItem from="1639132657058" duration="199000" />
+      <workItem from="1639474299431" duration="133000" />
+      <workItem from="1639727313744" duration="768000" />
+      <workItem from="1640679600539" duration="4454000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48660000" />
+    <option name="totallyTimeSpent" value="54214000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48070174" visible="true" weight="0.2170487" />
-      <window_info id="Structure" order="1" sideWeight="0.51929826" side_tool="true" visible="true" weight="0.2170487" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.47420147" visible="true" weight="0.23065902" />
+      <window_info id="Structure" order="1" sideWeight="0.5257985" side_tool="true" weight="0.23065902" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -343,13 +335,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/数组/169_多数元素_哈希.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/数组/217_存在重复元素_哈希.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="427">
@@ -368,13 +353,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/数组&amp;双指针/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="30" column="30" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -410,17 +388,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/数组/169_多数元素_哈希.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/数组&amp;双指针/1_两数之和.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
+        <state relative-caret-position="57">
+          <caret line="3" column="77" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/数组&amp;双指针/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/数组&amp;双指针/4_寻找两个正序数组的中位数.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="54" selection-start-line="35" selection-end-line="54" />
+        <state relative-caret-position="350">
+          <caret line="69" column="86" selection-start-line="69" selection-start-column="86" selection-end-line="69" selection-end-column="86" />
         </state>
       </provider>
     </entry>
